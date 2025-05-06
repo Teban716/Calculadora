@@ -33,13 +33,19 @@ def pedir_numero_positivo(prompt):
             print("El numero es invalido")
 
 def depositar():
-    depositar=pedir_numero_positivo
+    depositar = pedir_numero_positivo("Ingrese su valor")
     banco.append(depositar)
+    suma = sum(banco)
+    print(suma)
 
 def retirar():
+    retirar=pedir_numero_positivo()
+    retirar_negativo = retirar * (-1)
+    
+    
     print()
 
 def saldo():
-    print()
+    print(banco)
 
 menu()
